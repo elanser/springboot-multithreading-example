@@ -42,6 +42,7 @@ public class UserService {
         return CompletableFuture.completedFuture(users);
     }
 
+    // сделать CSV файл исходя из данного кода и туда добавить данные тестовые
     private List<User> parseCSVFile(final MultipartFile file) throws Exception {
         final List<User> users = new ArrayList<>();
         try {
